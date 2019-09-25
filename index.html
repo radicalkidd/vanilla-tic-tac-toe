@@ -5,8 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>tic-tac-toe</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Be+Vietnam|Comfortaa|Mansalva&display=swap');
+
+    body {
+      width: 550px;
+      margin: auto;
+      background: #e4f9f5;
+    }
+
+    h1 {
+      border-bottom: 2px solid black;
+      font-family: 'Mansalva', cursive;
+    }
+
+    .Boxes {
+      height: 100px;
+      width: 100px;
+      font-size: 45pt;
+      text-align: center;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    #message {
+      font-size: 30pt;
+      font-family: 'Amatic SC', cursive;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <h1>Play Tic-Tac-Toe!</h1>
+  <div id="message">Message Here!</div>
+  <table border="2">
+    <tr>
+      <td class="Boxes"></td>
+      <td class="Boxes"></td>
+      <td class="Boxes"></td>
+    </tr>
+    <tr>
+      <td class="Boxes"></td>
+      <td class="Boxes"></td>
+      <td class="Boxes"></td>
+    </tr>
+    <tr>
+      <td class="Boxes"></td>
+      <td class="Boxes"></td>
+      <td class="Boxes"></td>
+    </tr>
+  </table>
+  <script src="main.js"></script>
 </body>
 </html>
