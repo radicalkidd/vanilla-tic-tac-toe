@@ -1,10 +1,15 @@
 function startGame() {
   document.turn = "X";
+  setMessage(document.turn + " gets to start!");
 }
 
 function userTurn(box) {
-  box.innerText = document.turn;
-  switchTurn();
+  if(box.innerText === '') {
+    box.innerText = document.turn;
+    switchTurn();
+  } else {
+    setMessage("Pick another spot");
+  }
 }
 
 function switchTurn() {
@@ -13,4 +18,9 @@ function switchTurn() {
   } else {
     document.turn = "X";
   }
+  setMessage("It's " + document.turn + "'s turn!")
+}
+
+function setMessage(message) {
+  document.getElementById("message").innerText = message;
 }
