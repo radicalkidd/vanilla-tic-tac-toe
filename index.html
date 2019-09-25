@@ -33,6 +33,13 @@
       font-family: 'Amatic SC', cursive;
     }
 
+    #restart {
+      font-size: 25pt;
+      font-family: 'Amatic SC', cursive;
+      text-decoration: none;
+      color: red;
+    }
+
   </style>
 </head>
 <body onload="startGame()">
@@ -55,6 +62,7 @@
       <td class="Boxes" id="b9" onClick="userTurn(this)"></td>
     </tr>
   </table>
+  <a href="javascript: startGame();" id="restart">New Game!</a>
   <script src="index.js"></script>
 </body>
 </html>
